@@ -1,0 +1,29 @@
+@import "config";
+.home{
+  height: 100%;
+  padding-top: 20vh;
+  overflow:hidden;
+  align-items: center;
+  text-align: center;
+  background:
+          linear-gradient(
+          to right,
+          rgba($primaryColor,0.9),
+          rgba($primaryColor,0.3)
+          ),
+          url("../Assets/khushaalS.jpg") center top no-repeat;
+  background-size: cover;
+
+  &-name{
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid setTextColor($primaryColor);
+
+
+    &-last{
+      color: $secondaryColor;
+      font-weight: 700;
+    }
+  }
+}

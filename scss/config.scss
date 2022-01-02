@@ -1,0 +1,23 @@
+$primaryColor: #272727;
+$secondaryColor: #ff652f;
+
+
+
+
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+@mixin transitionEase{
+  transition: all 0.5s ease-in-out;
+}
+
+@function setTextColor($color){
+  @if(lightness($color) > 40%){
+    @return #000;
+  }@else{
+    @return white;
+  }
+}
